@@ -1,0 +1,25 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Communication between Arduino and HTML/JavaScript using IoT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IoT",
+    "socket.io",
+    "serialport"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "jsdom": "^24.0.0",
+    "serialport": "^9.2.8",
+    "socket.io": "^2.5.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
