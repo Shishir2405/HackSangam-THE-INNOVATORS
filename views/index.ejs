@@ -18,10 +18,20 @@
         <h1>AquaAir Tracker</h1>
       </div>
       <div class="navigation">
+        <button class="button" style="margin-right:1.5rem;" onclick="window.location.reload();">
+          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+          <lord-icon
+              src="https://cdn.lordicon.com/rsbokaso.json"
+              trigger="hover"
+              style="width:250px;height:250px">
+          </lord-icon>
+      </button>
+      
         <label class="switch" title="Dark Mode">
           <input type="checkbox" class="input__check" />
           <span class="slider"></span>
         </label>
+        
         <a href="#home">Home</a>
         <a href="#air">Air</a>
         <a href="#water">Water</a>
@@ -506,7 +516,7 @@
   });
 
   function updateTemperatureAndHumidity(temperatureMatch, humidityMatch) {
-    var randomTemperature = Math.floor(Math.random() * (38 - 37 + 1)) + 37;
+    var randomTemperature = Math.floor(Math.random() * (30 - 29 + 1)) + 29;
     var humidityValue = humidityMatch ? humidityMatch[1].trim() : "00";
     document.getElementById("humidity-value").innerHTML = humidityValue;
     var temperatureElement = document.getElementById("temperature-value");
